@@ -14,12 +14,12 @@ const iconMap = {
 
 export default function Skills() {
   return (
-    <section id="habilidades" className="py-24 px-6 md:px-16 lg:px-32 bg-light dark:bg-dark transition-colors duration-300">
+    <section id="tecnologias" className="py-24 px-6 md:px-16 lg:px-32 bg-light dark:bg-dark transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <Reveal>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-dark dark:text-white mb-4">
-              Habilidades
+              Tecnologías
             </h2>
             <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
           </div>

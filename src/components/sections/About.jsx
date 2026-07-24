@@ -33,14 +33,6 @@ export default function About() {
                         </p>
                     </Reveal>
                 </div>
-
-                <Reveal delay={0.5}>
-                    <div className="mt-12 flex justify-center">
-                        <Button className="px-10 py-4 text-lg w-full sm:w-auto justify-center">
-                            Descargar CV
-                        </Button>
-                    </div>
-                </Reveal>
             </div>
         </section>
     );
