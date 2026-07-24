@@ -26,10 +26,15 @@ export default function Hero() {
           </h2>
         </Reveal>
 
-        <Reveal delay={0.4}>
-          <p className="text-dark/80 dark:text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl mt-4">
-            Enfocada en el diseño y construcción de soluciones digitales funcionales, accesibles y centradas en el usuario. Cuento con experiencia desarrollo frontend, análisis de requerimientos, diseño de soluciones, participando en diferentes etapas del ciclo de vida de proyectos bajo metodologías ágiles.
-          </p>
+        <Reveal delay={0.6}>
+          <div className="flex flex-wrap gap-4 mt-4">
+            <Button onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}>
+              Ver proyectos
+            </Button>
+            <Button variant="outline" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
+              Contáctame
+            </Button>
+          </div>
         </Reveal>
       </div>
     </section>

@@ -9,11 +9,11 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: 'Inicio', href: '#inicio' },
     { name: 'Sobre mí', href: '#sobre-mi' },
-    { name: 'Proyectos', href: '#proyectos' },
-    { name: 'Habilidades', href: '#habilidades' },
+    { name: 'Tecnologías', href: '#tecnologias' },
     { name: 'Experiencia', href: '#experiencia' },
+    { name: 'Educación', href: '#educacion' },
+    { name: 'Proyectos', href: '#proyectos' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
@@ -22,14 +22,14 @@ export default function Navbar() {
       <div className="text-dark dark:text-white text-2xl font-bold font-['Inter',sans-serif]">
         DC
       </div>
-      
+
       {/* Desktop Links */}
       <div className="hidden md:flex items-center gap-8">
         <div className="flex items-center gap-8 mr-4">
           {navLinks.map((link) => (
-            <a 
+            <a
               key={link.name}
-              href={link.href} 
+              href={link.href}
               className="text-dark/70 dark:text-white/70 hover:text-primary dark:hover:text-primary font-medium transition-colors"
             >
               {link.name}
@@ -44,7 +44,7 @@ export default function Navbar() {
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center gap-4">
         <ThemeToggle />
-        <button 
+        <button
           onClick={toggleMenu}
           className="text-2xl text-dark dark:text-white focus:outline-none"
         >
@@ -56,9 +56,9 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-[72px] left-0 w-full bg-white dark:bg-dark shadow-lg md:hidden flex flex-col py-8 px-6 gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
           {navLinks.map((link) => (
-            <a 
+            <a
               key={link.name}
-              href={link.href} 
+              href={link.href}
               onClick={() => setIsOpen(false)}
               className="text-lg text-dark/80 dark:text-white/80 font-medium hover:text-primary transition-colors"
             >
